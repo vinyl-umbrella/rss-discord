@@ -1,0 +1,6 @@
+py
+    cronを起動
+    db接続
+db
+    table作成
+    デフォルトrssを追加

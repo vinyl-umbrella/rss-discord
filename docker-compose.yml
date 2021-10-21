@@ -7,7 +7,7 @@ services:
     env_file: ./db.env
     environment:
       - TZ=Asia/Tokyo
-    entrypoint: ["/bin/sh", "-c", "while :; do sleep 10; done"] # TODO: cron を起動
+    entrypoint: ["cron", "-f"]
     networks:
       rss:
         ipv4_address: 192.168.200.11

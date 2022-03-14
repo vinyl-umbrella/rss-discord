@@ -13,8 +13,8 @@ def make_datetime(parsed_date):
 
 
 conf = db.get_config()
+now = datetime.utcnow()
 for site in conf:
-    now = datetime.utcnow()
     td = now - site["lastcheck"]
     # print(site["name"], td)
 
